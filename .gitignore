@@ -1,0 +1,14 @@
+*.tar.xz
+*.tar.gz
+*.tar.bz2
+*.rpm
+*.src.rpm
+*.cer
+*.x509
+*.pem
+*.key
+*.p7b
+patch-*.patch
+kernel-abi-stablelists-*.tar.xz
+kernel-kabi-dw-*.tar.xz
+linux-kernel-test.patch
