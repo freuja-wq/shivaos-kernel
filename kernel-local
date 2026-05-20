@@ -1,9 +1,2 @@
 # This file is intentionally left empty in the stock kernel. Its a nicety
 # added for those wanting to do custom rebuilds with altered config opts.
-
-# ShivaOS — BORE scheduler + BBR3 TCP (toutes architectures)
-CONFIG_SCHED_BORE=y
-CONFIG_MIN_BASE_SLICE_NS=2000000
-CONFIG_TCP_CONG_BBR=y
-CONFIG_DEFAULT_BBR=y
-# CONFIG_DEFAULT_CUBIC is not set
