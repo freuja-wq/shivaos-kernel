@@ -187,18 +187,18 @@ Summary: The Linux kernel
 #  the --with-release option overrides this setting.)
 %define debugbuildsenabled 1
 # define buildid .local
-%define specrpmversion 7.0.8
-%define specversion 7.0.8
+%define specrpmversion 7.0.9
+%define specversion 7.0.9
 %define patchversion 7.0
-%define pkgrelease 200
+%define pkgrelease 204
 %define kversion 7
-%define tarfile_release 7.0.8
+%define tarfile_release 7.0.9
 # This is needed to do merge window version magic
 %define patchlevel 0
 # This allows pkg_release to have configurable %%{?dist} tag
-%define specrelease 200.shivaos1%{?buildid}%{?dist}
+%define specrelease 204.shivaos1%{?buildid}%{?dist}
 # This defines the kabi tarball version
-%define kabiversion 7.0.8
+%define kabiversion 7.0.9
 
 # If this variable is set to 1, a bpf selftests build failure will cause a
 # fatal kernel package build error
@@ -669,6 +669,8 @@ Summary: The Linux kernel
 %if %{nopatches}
 %define with_configchecks 0
 %endif
+# ShivaOS: disable configchecks — BORE configs validated via kernel-local merge
+%define with_configchecks 0
 
 # To temporarily exclude an architecture from being built, add it to
 # %%nobuildarches. Do _NOT_ use the ExclusiveArch: line, because if we
